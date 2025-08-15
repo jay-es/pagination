@@ -1,8 +1,15 @@
 {
-  "name": "pagination",
+  "name": "@jay-es/pagination",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsup src/index.mts --clean --format esm,cjs --dts",
     "test": "node ./src/index.test.mts",
     "test:watch": "node --watch ./src/index.test.mts"
   },
@@ -10,7 +17,14 @@
     "type": "git",
     "url": "git+https://github.com/jay-es/pagination.git"
   },
-  "keywords": [],
+  "keywords": [
+    "pagination",
+    "pager",
+    "paginate",
+    "page",
+    "util",
+    "array"
+  ],
   "author": "jay-es",
   "license": "MIT",
   "engines": {
@@ -20,9 +34,11 @@
     "url": "https://github.com/jay-es/pagination/issues"
   },
   "homepage": "https://github.com/jay-es/pagination#readme",
-  "description": "",
+  "description": "A simple pagination utility, with humble operation ability.",
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
-    "@types/node": "^24.2.1"
+    "@types/node": "^24.2.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
   }
 }
