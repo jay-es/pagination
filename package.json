@@ -1,0 +1,28 @@
+{
+  "name": "pagination",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./src/index.test.mts",
+    "test:watch": "node --watch ./src/index.test.mts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jay-es/pagination.git"
+  },
+  "keywords": [],
+  "author": "jay-es",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "bugs": {
+    "url": "https://github.com/jay-es/pagination/issues"
+  },
+  "homepage": "https://github.com/jay-es/pagination#readme",
+  "description": "",
+  "devDependencies": {
+    "@biomejs/biome": "2.2.0",
+    "@types/node": "^24.2.1"
+  }
+}
